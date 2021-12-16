@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Accordion - Default functionality</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+    <style>
+        img {
+            width: 20%;
+            border-radius: 25px;
+        }
+        #accordion{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Raças de gatos</h1>
+    <div id="accordion">
+        <h3>Persa e Himalaia</h3>
+        <div style="background-color: seagreen;">
+            <p>
+                O gato Persa é, para muitos, sinônimo de gato de luxo. Com seu porte tranquilo, pelagem longa e
+                majestosa e focinho plano, o tornam “rei das exposições”.
+                Possui temperamento tranquilo e é amável, ótimo para pessoas que possuem outros pets, crianças ou que
+                são donos pela primeira vez de um felino. O Persa adora dormir no colo e receber carinho!
+                <br>
+                Uma raça mais nova, a Himalaia, nasceu em 1950, quando cruzaram um gato Siamês com um Persa para criar
+                um pet que tivesse corpo do Persa e a coloração do Siamês (olhos azuis e cores nas extremidades,
+                denominado Persa Colorpoint).
+            </p>
+            <img src="https://i.pinimg.com/564x/3d/27/e4/3d27e48cbc367352d0872dbaf85f0784.jpg" alt="Persa e Himalaia">
+        </div>
+        <h3>Siamês</h3>
+        <div style="background-color: #CABAAB;">
+            <p>
+                A aparência de um gato Siamês é o que mais chama atenção: olhos bem azuis e pelos claros com
+                extremidades mais escuras (rosto, orelhas, patas e rabo).
+                Já o temperamento do gato Siamês pode ser imprevisível. Na maioria das vezes, são tranquilos, amáveis e
+                fiéis, mas algumas vezes, de repente, o comportamento muda, e eles podem ficar mais quietos e
+                apáticos.São uma raça independente e que precisa de socialização logo cedo, para não terem ciúmes de
+                seus donos e se darem bem com todas as pessoas próximas.
+            </p>
+            <img src="https://i.pinimg.com/564x/af/1f/f6/af1ff62f0f53399b29f27df039db4e73.jpg" alt="Siamês">
+        </div>        
+        <h3>Maine Coon</h3>
+        <div style="background-color: #9ACFDD;">
+            <p>
+                Também conhecido como o Gato Gigante, os gatos da raça Maine Coon são enormes, chegando a pesar até 13kg
+                e a um porte semelhante ao de um poodle médio. A coloração da pelagem é bem variada, e os pelos são
+                longos, principalmente na região do rabo. São brincalhões, ativos, companheiros e amigáveis. Por ser um
+                gato bem diferente e único, esta raça necessita de cuidados e atenção especiais. Por isso existe a ração
+                específica para Maine Coon.
+            </p>
+            <img src="https://i.pinimg.com/564x/93/a9/b5/93a9b59460807fa98a5770fad9cbbc38.jpg" alt="Maine Coon">
+        </div>
+        <h3>Sphynx</h3>
+        <div style="background-color: #FAF566">
+            <p>
+                Exótica e diferente, a raça Sphynx é a mais rara dos felinos. Também conhecido como Pelado Canadense, o
+                gato desta raça possui o visual totalmente sem pelos!<br>
+                Os gatos Sphynx são extremamente dóceis e apegados aos donos, adoram carinho, companhia e brinquedos
+                seja para se entreter sozinho ou de preferência com seu dono.
+                Além da ausência de pelos, os grandes olhos e orelhas são características marcantes. Eles também não
+                possuem bigodes, o que os tornam um pouco desajeitados.
+                Curiosamente, o primeiro gatinho pelado que deu origem à raça, nasceu em uma ninhada no Canadá, em 1966,
+                sendo o único sem pelos. Este gato deu crias, posteriormente, e mais gatos nasceram pelados, dando assim
+                continuidade e criação à raça Sphynx.
+            </p>
+            <img src="https://i.pinimg.com/564x/16/8e/e8/168ee88cf0c1ed5d9ed499fa8341e245.jpg" alt="Gato Sphynx">
+        </div>
+    </div>
+
+</body>
+
+</html>

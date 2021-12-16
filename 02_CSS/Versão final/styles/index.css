@@ -1,0 +1,229 @@
+/* -- Inicio das configurações que se aplicam a toda a página -- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+body{
+     background-color:linen;  /*Para corrigir a barra branca o final da página*/
+}
+
+/* -- Fim das configurações que se aplicam a toda a página -- */
+
+/* --Inicio das configurações do conteudo do header -- */
+
+header{
+    width:100%;
+    height:20vh;
+    background: linear-gradient(to right, black 5%, #26070C 40%, #732002,#26070C);
+    position:fixed;
+    z-index:1;
+}
+#logo{
+    position:absolute;
+    left:4vw;
+    height:20vh;
+    width:25vh;
+}
+#pesquisa{
+    position:absolute;
+    bottom:1.5vh;
+    right:3vw;
+    
+}
+#pesquisa input{
+    width: 20vw;
+    height:3vh;
+}
+
+/* --Fim das configurações do conteudo do header -- */
+
+
+/* -- Inicio das configurações do Menu horizontal do topo (nav)--*/  
+
+.headernav{
+    width:100%;
+    height:fit-content;
+    position:relative;
+    top:20vh;
+}
+.headernav ul {
+    height:100%;
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #1e130c;
+    border-top: 0.2vh ridge #9a8478;
+    border-bottom: 0.2vh ridge #9a8478;
+
+}
+.headernav ul li{
+    list-style: none;
+    width:auto;
+}
+.headernav ul li a{
+    font-weight: 700;
+    font-size: 1.8vw;
+    color:cornsilk;
+    background:radial-gradient(30% 70% at center, #806e65, #66574f, #1e130c);
+    text-shadow: 0px 0px 10px rgb(126, 115, 98);  
+}
+.headernav ul li a:hover{
+    animation-name: glow;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes glow{
+    50%{
+        color:linen;
+        background:radial-gradient(40% 60% at center, #d4bcae, #1e130c);
+        text-shadow: 0px 0px 20px rgb(248, 244, 239);
+    }
+    100%{
+        color:linen;
+        background:radial-gradient(50% 50% at center, #e0c2b2, #1e130c);
+        text-shadow: 0px 0px 20px linen;
+    }
+}
+.headernav form{
+    float:right;
+}
+/* -- Fim das Configurações do Menu horizontal do topo --*/ 
+
+/* -- Inicio das configurações do conteúdo principal (main) -- */
+
+main{
+    width:100%;
+    height:110vw;
+    position: relative;
+    top:20vh;
+    background-color:linen;
+    display:flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+
+}
+section{
+    width:90%;
+    height:100%;
+    background-color:rgba(194, 176, 155, 0.7);
+    padding:0 0 2rem 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+#a1{
+
+    width:100%;
+    height:30%;
+    background-color: #54433b;
+    background-image: url(../img/bkg-img1.jpeg);
+    background-size:cover;
+    box-shadow: 0px 5px 5px 0px #1e130c;
+}
+#a2{
+    width:80%;
+    height:30%;
+    display:flex;
+
+}
+#a2 div{
+    width:40%;
+    height:100%;
+    position:relative;
+    text-align:center;
+}
+#a2 :nth-child(2){
+    width:60%;
+}
+#triplo-choco{
+    position:absolute;
+    top:-3vh;
+    left:-8vw;
+    width: 120%;
+}
+#triplochoco-txt{
+    font-size:1.8vw;
+    font-weight:700;
+    margin-top:2%;
+    width:90%;
+    text-shadow: 0px 0px 15px rgb(90, 78, 78);
+}
+#a3{
+    width:80%;
+    height:30%;
+    display:flex;
+}
+#a3 div{
+    width:33%;
+    height:100%;
+}
+#a3 :nth-child(2){
+    width:34%
+}
+.choco-bottom{
+    width:100%;
+}
+#chocob1{
+    margin-top:4rem;
+}
+#logoreceitas img{
+    margin-top: 5vh;
+}
+
+/* -- Fim das configurações do conteúdo principal (main) -- */
+
+/* -- Inicio das configurações do rodapé (footer) --*/
+
+footer{
+    position:relative;
+    top:20vh;
+    width:100%;
+    height:110px;
+    background-color: linen;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+}
+.container{
+    width:90%;
+    height:10vh;
+    background-color:linen;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+.logo-bottom{
+    width:35%;   
+}
+.redes-sociais{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items:center;   
+}
+.fotorodape{
+    width: 50%;
+}
+.instagram{
+    width: 50%;    
+}
+.facebook{
+    width: 50%;
+}
+.twitter{
+    width: 50%;
+}
+
+/* -- Fim das configurações do rodapé (footer) --*/

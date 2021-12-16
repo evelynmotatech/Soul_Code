@@ -1,0 +1,37 @@
+/* Formatação geral */
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Botão de acessibilidade visual */
+
+.dark_button {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    transition: 1s;
+}
+.light_button {
+    background-color: rgb(235, 232, 232);
+    color: rgb(14, 14, 14);
+    transition: 1s;
+}
+.increase_decrease {
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.light-dark-button {
+    padding: 5px;
+    display: flex;
+    margin: 10px;
+}
+.light-dark-button label {
+    padding: 5px;
+    margin-right: 10px;
+    font-weight: 600px;
+    border-top: 100px;
+}

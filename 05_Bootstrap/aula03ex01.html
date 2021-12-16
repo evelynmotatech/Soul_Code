@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap-4.6.0/css/bootstrap.min.css">
+  <!-- Grid responsivo -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <title>Bootstrap</title>
+
+<body>
+
+  <section class="container" style="background-color: #6DD6C2;">
+    <section>
+      <div class="my-2 d-flex justify-content-around" style="height: 80px; color: black;">
+        <h1 class="text-center" style="color: white;"> Soul Game </h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Video_game_controller_icon_designed_by_Maico_Amorim.svg/1200px-Video_game_controller_icon_designed_by_Maico_Amorim.svg.png" alt="">
+      </div>
+      <h3 class="text-center">Jogos disponíveis</h3>
+      <div class="d-flex my-5">
+        <div class="col-5">
+          <div class="list-group" id="minhaLista" role="tablist">
+            <a class="list-group-item list-group-item-action " data-toggle="list" href="#leagueOfLegends" role="tab">
+              league Of Legends
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#stardewValley" role="tab">
+              Stardew Valley
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#pokeMMO" role="tab">
+              PokeMMO
+            </a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#ragnarokOnline" role="tab">
+              Ragnarok Online
+            </a>
+          </div>
+        </div>
+        <!-- Painel de abas -->
+        <div class="col-7">
+          <div class="tab-content">
+            <div class="tab-pane " id="leagueOfLegends" role="tabpanel">
+              <p class="text-monospace text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officiis deserunt quidem hic ut iusto
+                sunt ex soluta. Provident quaerat quae, ullam quos eos earum assumenda nobis dolorem quas facere sint
+                modi minus nulla maxime numquam dicta corrupti beatae laboriosam suscipit repellendus qui inventore?
+                Illum!
+              </p>
+            </div>
+            <div class="tab-pane" id="stardewValley" role="tabpanel">
+              <p class="text-monospace text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, earum ut. Non quo consectetur dicta
+                perspiciatis molestiae nesciunt minima totam corporis doloremque? Aperiam, natus tenetur.
+              </p>
+            </div>
+            <div class="tab-pane" id="pokeMMO" role="tabpanel">
+              <p class="text-monospace text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus magnam possimus repudiandae
+                labore nam, quisquam fugiat, eum, neque velit similique eveniet quia iure aperiam eos? Reiciendis, vel.
+                Harum, voluptas.
+              </p>
+            </div>
+            <div class="tab-pane" id="ragnarokOnline" role="tabpanel">
+              <p class="text-monospace text-justify">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita nisi animi nobis totam incidunt? Optio, perferendis nostrum laudantium qui incidunt harum officiis aspernatur blanditiis minus provident repellat aliquam vero laboriosam possimus ipsa nemo illum quisquam iusto pariatur culpa eaque dicta! Impedit magnam earum libero numquam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
+    <section class="container">
+      <div class="row">
+        <main class="col-md-9 bg-light">
+          <h4 class="text-md-center">Preencha os campos abaixo</h4>
+          <form>
+            <div class="form-group row">
+              <label for="inputName3" class="col-sm-2 col-form-label">Nome</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName3" placeholder="Nome">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="email@exemplo.com">
+              </div>
+            </div>
+            <h6 class="text-center">Jogos que quer receber atualização</h6>
+            <div class="form-group row">
+              <div class="col-sm-2">Opções:</div>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    League of Legends
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck2">
+                  <label class="form-check-label" for="gridCheck2">
+                    Stardew Valley
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck3">
+                  <label class="form-check-label" for="gridCheck3">
+                    PokeMMO
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck4">
+                  <label class="form-check-label" for="gridCheck4">
+                    Ragnarok Online
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="input-group my-3 mb-b">
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-outline-info">Selecione o tipo de notificação</button>
+                <button type="button" class="btn btn-outline-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Tipo de notificação</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Newslatter</a>
+                  <a class="dropdown-item" href="#">Gameplay</a>
+                  <a class="dropdown-item" href="#">Atualização</a>                  
+                  <a class="dropdown-item" href="#">Mods</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-outline-info">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </main>
+        <aside class="col-md-3 bg-info">
+          <h6 class="text-center my-3" style="color:white; font-variant:small-caps;">Assista nossas últimas gameplays:</h6>
+          <section class="p-2">
+            <p class="text-center" style="color:white; font-variant:small-caps;"><em>Stardew Valley</em></p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1YlxJrSaqPw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </section>
+          <section class="p-2">
+            <p class="text-center" style="color:white; font-variant:small-caps;"><em>PokeMMO</em></p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1YlxJrSaqPw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </section>
+    </section>
+    </aside>
+    </div>
+    <footer class="mt-5" style="color: white;">
+      <h6 class="text-center">
+        &copy;Copyright
+      </h6>
+    </footer>
+  </section>
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="./bootstrap-4.6.0/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="./bootstrap-4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

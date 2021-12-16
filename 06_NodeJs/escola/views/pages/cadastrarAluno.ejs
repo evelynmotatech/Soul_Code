@@ -1,0 +1,30 @@
+<%- include("../partials/header"); %>
+
+<div class="container">
+    <div class="row">
+        <div class="col">             
+            <h1 class="mt-5">Cadastrar Alunos</h1>
+            <form action="/alunos/cadastrarAluno" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input class="form-control" id="nome" type="text" name="nome" placeholder="Nome do aluno" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input class="form-control" id="idade" type="number" name="idade" placeholder="10"required>
+            </div>
+            <div class="form-group">
+                <label for="serie">Série</label>
+                <input class="form-control" id="serie" type="text" name="serie" placeholder="8 ano" required>
+            </div>
+            <div class="form-group">
+                <label for="sala">Sala da turma</label>
+                <input class="form-control" id="sala" type="number" name="sala" placeholder="102" required>
+            </div>
+            <button class="btn btn-outline-primary" type="submit">Enviar</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer"); %>

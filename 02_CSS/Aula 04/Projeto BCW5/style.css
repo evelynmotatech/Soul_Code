@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+footer{
+border: 1px solid;
+height: 80px;
+width: 100%;
+}
+header{
+    border: 1px solid;
+    height: 100px;
+    width: 100%;
+}
+main{
+    border: 1px solid;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+nav{
+    border: 1px solid;
+    height: 40px;
+    width: 100%;    
+}
+#sec1, #sec2, #sec3{
+    height: 100%;
+    width: 31%;
+    border: solid 1px;
+}
+
+#sec2{
+    position: absolute;
+    left: 34.5%;
+    top: 0px;
+}
+#sec3{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+ul{
+    width: 20%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;    
+}
+li{
+    float: left;
+    list-style: none;
+    background-color: aqua;
+    padding: 10px;   
+}
+li:nth-child(2){
+    margin: 0px 30px;
+}
+input{
+    position: relative;
+    top: 35px;
+    left: 70%;
+}

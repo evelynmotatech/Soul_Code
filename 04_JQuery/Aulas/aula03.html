@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello, JQuery.</title>
+    <!-- Versão development jQuery -->
+    <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+    <!-- <p>Este é um parágrafo.</p>
+    <button>Retorne a posição top e left do elemento p.</button>  
+    <script>
+        //Position();
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         var x = $("p").position();
+        //         console.log(x);
+        //         alert("Top position: " + x.top + ". Left position: " + x.left);
+        //     })
+        // })
+        
+        //Offset();
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         var x = $("p").offset();
+        //         console.log(x);
+        //         alert("Top position: " + x.top + ". Left position: " + x.left);
+        //     })
+        // })        
+    </script> -->
+
+    <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste cum atque id error. Quas exercitationem mollitia illum voluptate voluptas cupiditate eaque voluptates molestiae, odio similique impedit facilis et aut deserunt deleniti nobis minus inventore. Molestiae adipisci assumenda dolore optio, tempora voluptate enim blanditiis voluptates perspiciatis at veniam perferendis pariatur fugiat dolor quis illum! Dolorem voluptatum deserunt sapiente reprehenderit id quisquam quidem illo temporibus ipsa natus? Tempore itaque, aut cumque, aliquid similique quibusdam veniam quasi doloribus dolore at ratione dicta quo nemo! Esse eligendi minima, eveniet impedit obcaecati ratione optio atque officiis veritatis, ab voluptate corporis! Voluptatem ut asperiores quas.
+    </div><br>
+    <div id="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure libero nam placeat deleniti tempore necessitatibus voluptas provident nemo, at, voluptatibus ea, quae accusamus repellat magnam quo ipsam commodi in! Deserunt id, ratione debitis eaque delectus modi sit quasi sapiente voluptatem iure voluptates, odit similique illo, in voluptate autem quos vel! Cumque eligendi nostrum quam minus illum recusandae necessitatibus, illo harum dolorum at temporibus pariatur! Recusandae, hic perspiciatis! Vitae, officia quas earum, debitis necessitatibus nobis perspiciatis accusamus nostrum eum similique, saepe excepturi cupiditate quae esse? Architecto, pariatur, quidem eos adipisci veritatis velit labore voluptatum illo quasi fugiat fuga. Architecto, eligendi!
+    </div>
+    <button id="btn1">Efeitos</button>
+    <button id="btn2">Reset</button>
+
+
+    <script>
+        $(document).ready(function(){
+            function bg(){
+                $("div").css({backgroundColor: 'tomato'});
+            }
+            function borda(){
+                $("div").css({border: "solid 2px"});
+            }            
+            
+            $("#btn1").on({click: bg, dblclick: borda});
+
+            $("#btn2").click(function(){
+                $("div").css({backgroundColor: "inherit"});
+                $("div").css({border: "inherit"})
+            });
+        });
+   
+        // $(document).ready(function () {
+        //     $("#box1").mouseover(function(){
+        //         $("#box1").css({backgroundColor: "tomato"}).fadeTo(1000, 0.9);
+                
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("#box1").mouseout(function(){
+        //         $("#box1").css({backgroundColor: "tomato"}).fadeTo(1000, 0.3);                
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("#box2").mouseover(function(){
+        //         $("#box2").css({backgroundColor: "pink"}).fadeTo(1000, 0.9);
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("#box2").mouseout(function(){
+        //         $("#box2").css({backgroundColor: "white"}).fadeTo(1000, 0.3);  
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("#box3").mouseover(function(){
+        //         $("#box3").css({backgroundColor: "gray"}).fadeTo(1000, 0.9);
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     $("#box3").mouseout(function(){
+        //         $("#box3").css({backgroundColor: "white"}).fadeTo(1000, 0.3);  
+        //     });
+        // });
+
+
+    </script>
+</body>
+
+</html>

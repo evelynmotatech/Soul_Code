@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1{
+    font-size: xx-small;
+}
+
+.videolocal{
+    width: 1000px;
+    height: 750px;
+}
+@media screen and (min-width: 780px;) {
+    .videolocal{
+        width:800px;
+        height: 400px;
+    }
+}

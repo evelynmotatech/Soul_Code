@@ -1,0 +1,46 @@
+RELACIONA O NOME DO ALUNO COM SUA RESPECTIVA NOTA;
+select alunos.nome_aluno, notas.materia, notas.nota from alunos join notas on alunos.matricula_aluno = notas.aluno_nota;
+
+RELACIONA O NOME DO FUNCIONARIO COM A TURMA E SALA DA AULA;
+select funcionarios.nome_func, locais.descricao_local, turmas.id_turma from turmas join locais join funcionarios on turmas.local_turma = locais.id_local and turmas.professor_turma = funcionarios.cpf_func;
+
+RELACIONA O NOME DO ALUNO COM A SALA DE AULA (usando a turma como parâmetro, pois ela é referenciada nas duas tabelas);
+select alunos.nome_aluno, locais.descricao_local from alunos join turmas join locais on alunos.turma_aluno = turmas.id_turma and turmas.local_turma = locais.id_local;
+
+RELACIONA O NOME DO ALUNO COM A SALA DE AULA (usando a turma como parâmetro, pois ela é referenciada nas duas tabelas); -- MODO ENXUTO --
+select alunos.nome_aluno, locais.descricao_local from alunos join turmas join locais on alunos.turma_aluno = turmas.id_turma and turmas.local_turma = locais.id_local;
+
+RELACIONA O NOME DO ALUNO COM A SALA DE AULA (usando a turma como parâmetro, pois ela é referenciada nas duas tabelas) E O NOME DO PROFESSOR;
+select alunos.nome_aluno, locais.descricao_local, funcionarios.nome_func from alunos join turmas join locais join funcionarios on alunos.turma_aluno = turmas.id_turma and turmas.local_turma = locais.id_local and turmas.professor_turma = funcionarios.cpf_func;
+
+RELACIONA O NOME DO ALUNO, O NOME DO FUNCIONARIO, A MATÉRIA E A NOTA; -- MODO ENXUTO --
+select al.nome_aluno, fn.nome_func, nt.materia, nt.nota from notas as nt join funcionarios as fn join alunos as al on nt.professor_nota = fn.cpf_func and nt.aluno_nota = al.matricula_aluno;
+
+RELACIONA O NOME DO FUNCIONARIO CPM A NOTA DADA POR ELE E ORGANIZA A TABELA
+select funcionarios.nome_func, notas.nota from notas right join funcionarios on funcionarios.cpf_func = notas.professor_nota where funcionarios.cargo_func='professor';
+
+
+-- OBS: NÃO FAZER! --
+PROCEDURE (MEXE COM AS CONFIGURAÇÕES INTERNAS DO BANCO DE DADOS)
+SELECT 
+  ROUTINE_SCHEMA,
+  ROUTINE_NAME
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE ROUTINE_TYPE = 'PROCEDURE';
+
+CRIAR PROCEDURE
+DELIMITER &&  
+CREATE PROCEDURE teste ()  
+BEGIN  
+    SELECT * FROM alunos; 
+END &&  
+DELIMITER ;
+--
+
+
+SISTEMA DE RH
+select funcionarios.nome_func, funcionarios.cargo_func, salario.valor_salario from funcionarios join salario on funcionarios.id_func = salario.func_salario;
+
+select funcionarios.nome_func, funcionarios.departamento_func, funcionarios.cargo_func, salario.valor_salario from funcionarios join salario on funcionarios.id_func = salario.func_salario;
+
+select funcionarios.nome_func, salario.valor_salario from funcionarios join salario on funcionarios.id_func = salario.func_salario;

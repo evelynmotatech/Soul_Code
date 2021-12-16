@@ -1,0 +1,43 @@
+hr {
+  color: rgb(200, 200, 35);
+  height: 1px;
+}
+
+#introducao {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.175rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #E23237;
+  margin: 3px 0;
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  line-height: 20px;
+}

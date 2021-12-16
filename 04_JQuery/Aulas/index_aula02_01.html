@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>exemplos</title>
+  <!-- Versão development jQuery -->
+  <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div id="div_teste">
+  <h3 class="teste">Lista de itens 1</h3>
+  <h3 id="campotexto" class="teste" ">Lista de itens 2</h3>
+  <ul id="lista" style="background-color: tomato;">
+    <li>Primeiro item</li>
+    <li>Segundo item</li>
+    <li>Terceiro item</li>
+  </ul>
+  <h3 clas="teste">Lista de item 3</h3>
+  <button id="botao_teste">btn teste</button>
+  </div>
+
+  <!-- <script type="text/javascript">
+    var contador=0;
+    $("#botao_teste").click(function(){
+      contador ++;
+      $("#campotexto").append("<h6 style='background-color: seagreen';>teste: " + contador + "</h6>")
+    });
+  </script> -->
+  <!-- <script type="text/javascript">
+    var contador=0;
+    $("#botao_teste").click(function(){
+      contador ++;
+      $("#campotexto").prepend("<h6 style='background-color: seagreen';>teste: " + contador + "</h6>")
+    });
+  </script> -->
+  <script type="text/javascript">
+    var contador=0;
+    $("#botao_teste").click(function(){      
+      $("#div_teste").prepend("<h6 style='background-color: seagreen';>teste: " + contador + "</h6>")
+      contador ++;
+    });
+  </script>
+</body>
+
+</html>

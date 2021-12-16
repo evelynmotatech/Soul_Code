@@ -1,0 +1,65 @@
+<section class="container" id="diretivas">
+
+  <div>
+    <h1>Diretivas</h1>
+    <p>Diretivas são extensões da linguagem HTML, que fornecem a possibilidade de estender/ampliar o comportamento de
+      elementos HTML. Este recurso permite a implementação de novos comportamentos de forma declarativa.Ao selecionar um elemento HTML, a diretiva pode ampliar seu comportamento de diversas formas:</p>
+    <mat-list role="list">
+      <mat-list-item role="listitem">para adicionar um novo HTML,</mat-list-item>
+      <mat-list-item role="listitem">associar eventos à funções Javascript,</mat-list-item>
+      <mat-list-item role="listitem">manipular o DOM.</mat-list-item>
+    </mat-list>
+  </div>
+
+  <section class="my-2">
+    <h3>Principais Diretivas</h3>
+    <div class="d-flex row">
+      <div class="col-md-4">
+        <mat-card class="example-card">
+          <img mat-card-image src="../../assets/diretiva1.png">
+          <mat-card-content>
+            <p>
+              A diretiva ngIf é usada para incluir ou excluir um elemento da interface do usuário, incluindo os
+              elementos filhos do elemento. A marcação excluída por uma diretiva ngIf não será invisível, apenas não
+              estará no DOM.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button href="https://angular.io" target="_blank" mat-raised-button color="warn">Saiba mais</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="col-md-4">
+        <mat-card class="example-card">
+          <img mat-card-image src="../../assets/diretiva2.png">
+          <mat-card-content>
+            <p>
+              Esta é uma diretiva para processar cada item de um objeto iterável, gerando uma marcação para cada um. Ela
+              é conhecida como uma diretiva estrutural porque pode alterar o layout do DOM adicionando e removendo
+              elementos DOM de visualização.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button href="https://angular.io" target="_blank" mat-raised-button color="warn">Saiba mais</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="col-md-4">
+        <mat-card class="example-card">
+          <img mat-card-image src="../../assets/diretiva3.png">
+          <mat-card-content>
+            <p>
+              A diretiva ngSwitch é uma diretiva que exibe um elemento de um possível conjunto de elementos com base em
+              alguma condição. Ela usa as diretivas ngSwitchCase e ngSwitchDefault.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button href="https://angular.io" target="_blank" mat-raised-button color="warn">Saiba mais</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+</section>

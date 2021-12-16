@@ -1,0 +1,26 @@
+.border{
+    background-color: #faaf3b;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+aside{
+    width: 24%;
+    float: right;
+    height: 300px;    
+}
+
+footer{
+    height: 80px;
+    clear: both;    
+}
+
+header{    
+    height: 80px;
+}
+
+main{    
+    width: 74%;
+    height: 400px;
+    float: left;
+}

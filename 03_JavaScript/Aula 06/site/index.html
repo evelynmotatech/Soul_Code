@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name = "formulario" action="enviar" method = "post">
+        <ul class="itens-form">
+            Name:
+            <input type="text" class="formcliente" id = "nome" name="nome">
+            Age:
+            <input type="number" class="formcliente" id = "idade" name="idade">
+            Reason for the trip:
+            <input type="text" class="formcliente" id = "motivo" name="motivo" >               
+            Email:
+            <input type="email" class="formcliente" id = "email" name="email" required>        
+            <input id = "btnenvio" type="submit" onclick= "return validar()" onblur="dadosok()">
+        </ul>
+    </form>
+
+</body>
+</html>

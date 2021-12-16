@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" />
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" />
+        <br>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg"></textarea>
+        <br>
+        <button type="submit">Enviar sua mensagem</button>
+        <button type="reset">Limpar</button>
+        <br>        
+    </form>
+
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <input type="radio" id="mario" name="fav_game" value="mario">
+        <label for="mario">Mario</label><br>
+        <input type="radio" id="lol" name="fav_game" value="lol">
+        <label for="lol">League of Legends</label><br>
+        <input type="radio" id="stardew" name="fav_game" value="stardew">
+        <label for="stardew">Stardew Valley</label><br>
+        <button type="submit">Enviar sua mensagem</button>
+        <button type="reset">Limpar</button>
+        <br>
+    </form>
+    <br><br>
+
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <label for="name">Qual o seu nome?</label>
+        <input type="text" id="name">
+        <br>
+        <input type="checkbox" id="html" name="lang_fav" value="html"/>
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="python" name="lang_fav" value="python"/>
+        <label for="python">Python</label>
+        <br>
+        <input type="checkbox" id="javascript" name="lang_fav" value="javascript">
+        <label for="javascript">JavaScript</label><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+</html>

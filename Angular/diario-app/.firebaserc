@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "diario-angular-1-64375": {
+      "hosting": {
+        "diario-app": [
+          "diario-angular-1-64375"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "diario-angular-1-64375"
+  }
+}

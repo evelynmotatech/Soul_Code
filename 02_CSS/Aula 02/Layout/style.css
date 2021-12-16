@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: indigo;
+}
+main{
+    width: 90%;
+    height: 500px;
+    background-color: hsl(230, 40%, 27%);
+    float: left;
+}
+
+aside{
+    width: 10%;
+    height: 500px;
+    background-color: hsl(30, 20%, 27%);
+    float: right;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: hsl(30, 68%, 62%);
+    clear: both;    
+}
+
+section:nth-child(1){
+    width: 50%; 
+    color: ivory;   
+    background-color: hsl(230, 40%, 27%);
+    float: left;
+    height: 100%;
+}
+section:nth-child(2){
+    width: 50%;     
+    color: ivory;   
+    background-color: hsl(230, 40%, 27%);
+    float: right;
+    height: 100%;
+}
+
+/* .rodape{
+    width: 90%;
+    height: 200px;
+    background-color: hsl(123, 92%, 24%);
+    clear: both;
+} */
+
+/* .menu{
+    width: 90%;
+    height: 200px;
+    background-color: hsl(230, 40%, 27%);      
+} */

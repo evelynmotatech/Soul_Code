@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    margin-top:4vh;
+    margin-bottom:1vh;
+}
+
+ul{
+	list-style: none;
+}
+p{
+    font-size: 1.5vh;
+}
+body{
+    background-color:linen;  /*Para corrigir a barra branca o final da página*/
+}
+
+/* --Inicio das configurações do conteudo do header -- */
+
+header{
+    width:100%;
+    height:20vh;
+    background: linear-gradient(to right, black 5%, #26070C 40%, #732002,#26070C);
+    position:fixed;
+    z-index:1;
+}
+#logo{
+    position:absolute;
+    left:4vw;
+    height:20vh;
+    width:25vh;
+}
+#pesquisa{
+    position:absolute;
+    bottom:1.5vh;
+    right:3vw;
+    
+}
+#pesquisa input{
+    width: 20vw;
+    height:3vh;
+}
+
+/* --Fim das configurações do conteudo do header -- */
+/* -- Inicio das configurações do Menu horizontal do topo (nav)--*/  
+
+.headernav{
+    width:100%;
+    height:fit-content;
+    position:relative;
+    top:20vh;
+}
+.headernav ul {
+    height:100%;
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #1e130c;
+    border-top: 0.2vh ridge #9a8478;
+    border-bottom: 0.2vh ridge #9a8478;
+
+}
+.headernav ul li{
+    list-style: none;
+    width:auto;
+}
+.headernav ul li a{
+    font-weight: 700;
+    font-size: 1.8vw;
+    color:cornsilk;
+    background:radial-gradient(30% 70% at center, #806e65, #66574f, #1e130c);
+    text-shadow: 0px 0px 10px rgb(126, 115, 98);  
+}
+.headernav ul li a:hover{
+    animation-name: glow;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes glow{
+    50%{
+        color:linen;
+        background:radial-gradient(40% 60% at center, #d4bcae, #1e130c);
+        text-shadow: 0px 0px 20px rgb(248, 244, 239);
+    }
+    100%{
+        color:linen;
+        background:radial-gradient(50% 50% at center, #e0c2b2, #1e130c);
+        text-shadow: 0px 0px 20px linen;
+    }
+}
+.headernav form{
+    float:right;
+}
+/* -- Fim das Configurações do Menu horizontal do topo --*/ 
+/* -- Inicio das configurações do conteúdo principal (main) -- */
+main{
+    position: relative;
+    top:20vh;
+    height:180vh;
+}
+.flex_pai{
+    display: flex;
+    flex-direction: column;
+    height:180vh;
+    position:relative
+}
+.flex_filho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	line-height: 1.5;
+    height:fit-content;
+}
+.flex_filho section:nth-child(1), .flex_filho section:nth-child(2), .flex_filho section:nth-child(3){
+    width: 30%;
+    height: 50%;
+    padding: 5px;
+	text-align: center;
+	margin: 10px;
+}
+.img_receitas{
+    width: 60%;
+    height: 40%;
+    border-radius:20%;
+}
+.cabecalho_receitas{
+	font-size: 2vw;
+	color: rgb(77, 48, 6);
+    padding-top:20px;
+	text-align: center;
+	width: 100%;
+}
+#titulos h1{
+    font-size: 2rem;
+}
+#titulos h3{
+    font-size: 1.4rem;
+}
+
+/* -- Fim das configurações do conteúdo principal (main) -- */
+/* -- Inicio das configurações do rodapé (footer) --*/
+
+footer{
+    position:relative;
+    top:20vh;
+    width:100%;
+    height:110px;
+    background-color: linen;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+}
+.container{
+    width:90%;
+    height:10vh;
+    background-color:linen;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+.logo-bottom{
+    width:35%;   
+}
+.redes-sociais{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items:center;   
+}
+.fotorodape{
+    width: 50%;
+}
+.instagram{
+    width: 50%;    
+}
+.facebook{
+    width: 50%;
+}
+.twitter{
+    width: 50%;
+}
+
+/* -- Fim das configurações do rodapé (footer) --*/
+

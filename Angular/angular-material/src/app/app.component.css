@@ -1,0 +1,24 @@
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+div{
+  margin: 40px 0px;
+}
+
+img{
+  width: 350px;
+  border-radius: 5px;
+}
+
+h2{
+ font-variant: small-caps;
+ font-size: 30px;
+ text-transform: lowercase;
+}

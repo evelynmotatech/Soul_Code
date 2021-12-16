@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>exemplos</title>
+  <!-- Versão development jQuery -->
+  <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="div_teste">
+    <h3 class="teste">Lista de itens1</h3>
+    <ul id="lista1" style="background-color: purple">
+      <li class="item_da_lista1">Primeiro item</li>
+      <li class="item_da_lista1">Segundo item</li>
+      <li class="item_da_lista1">Terceiro item</li>
+    </ul>
+    <h3 id="campo_texto" class="teste">Lista de itens2</h3>
+    <ul id="lista2" style="background-color: green">
+      <li class="item_da_lista2">Quarto item</li>
+ 
+    </ul>
+    <button id="botao_teste1">1 pra 2</button>
+    <button id="botao_teste2">2 pra 1</button>
+  </div>
+
+  <script type="text/javascript">
+    $("#botao_teste1").click(function () {
+      var lista1 = $("#lista1").children().detach(); 
+      $("#lista2").append(lista1);
+    });
+    $("#botao_teste2").click(function () {
+      var lista2 = $("#lista2").children().detach(); 
+      $("#lista1").append(lista2);
+    });
+  </script>
+
+    <!-- Opção 2
+    <script type="text/javascript">
+      $("#botao_teste1").click(function () {
+        var lista1 = $("#lista1").html();
+        $("#lista1").empty()
+        $("#lista2").append(lista1);
+      });
+      $("#botao_teste2").click(function () {
+        var lista2 = $("#lista2").html(); 
+        $("#lista2").empty()
+        $("#lista1").append(lista2);
+      });
+    </script> -->
+  
+  
+</body>
+
+</html>

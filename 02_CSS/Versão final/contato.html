@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon" />
+    <title>Cacau Soul</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo" src="img/logo.png" alt="Cacau Soul">
+        </div>
+        <form id="pesquisa">
+            <input type="search" id="search" placeholder="Pesquise aqui" />
+        </form>
+        <nav class="headernav">
+            <ul>
+                <li><a href="chocolate_aoleite.html">Chocolate ao Leite</a></li>
+                <li><a href="chocolate_branco.html">Chocolate Branco</a></li>
+                <li><a href="chocolate_amargo.html">Chocolate Amargo</a></li>
+                <li><a href="chocolate_variedades.html">Variedades</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img id="img-contato" src="img/chocolate-header.jpg" alt="">
+            <form id="form-contato" action="Enviar Contato" method="POST">
+                <fieldset>
+                     <div id="titulo-descricao">
+                        <p>FALE CONOSCO</p>
+                    </div>
+                    <div>
+                        <input type="text" id="nome" placeholder="  Nome">
+                        <input type="text" id="email" placeholder="  Email">
+                        <input type="tel" id="telefone" placeholder=" Telefone/Celular">
+                        <select id="info" name="informacao">
+                            <option value="1">Selecione uma Informação</option>
+                            <option value="2">Sugestão</option>
+                            <option value="3">Reclamação</option>
+                            <option value="4">Informação</option>
+                        </select>
+                        <textarea class="comment" placeholder=" ESCREVA SUA MENSAGEM..."></textarea>
+                        <br>
+                        <input class="botao-enviar" type="reset" name="submitInfo" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logo-bottom">
+                <a href="index.html"><img class="fotorodape" src="img/logo2.png" alt="Home" title="Página inicial"></a>
+            </div>
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/cacausoul.code?r=nametag" target="_blank"><img
+                        src="img/instagram_logo.png" class="instagram" title="Instagram">
+                </a>
+                <a href="https://www.facebook.com/Cacau-Soul-106979744968559" target="_blank"><img
+                        src="img/facebook_logo.png" class="facebook" title="Facebook">
+                </a>
+                <a href="#" target="_blank" title="Twitter"><img src="img/twitter_logo.png" class="twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

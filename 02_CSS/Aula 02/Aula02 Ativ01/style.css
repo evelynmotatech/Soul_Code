@@ -1,0 +1,208 @@
+body{
+    background-image: url(https://www.infoescola.com/wp-content/uploads/2019/07/mapa-do-brasil-estados-branco-comlegenda.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div{
+    background-color: rgb(240, 238, 238);
+    width: 400px;
+    height: 32  0px;    
+    float: left;
+    padding: 10px; 
+    margin: 10px;
+    
+}
+
+#b1{
+    border: 6px dashed;
+    border-radius: 30px;
+    border-color: teal;
+    box-shadow: 15px 15px 15px #25c468;
+}
+#b2{
+    border: 20px solid;
+    border-radius: 50px;
+    border-color: rgb(78, 122, 27);
+    box-shadow: 15px 15px 15px #25c468;
+}
+#b3{
+    border: 20px ridge;
+    border-radius: 15px;
+    border-color: rgb(66, 10, 33);
+    box-shadow: 15px 15px 15px #25c468;
+}
+#b4{
+    border: 6px double;
+    border-radius: 30px;
+    border-color: rgb(201, 16, 62);
+    box-shadow: 15px 15px 15px #25c468;
+}#b5{
+    border: 9px inset;
+    border-radius: 10px;
+    border-color: rgb(179, 202, 46);
+    box-shadow: 15px 15px 15px #25c468;
+}#b6{
+    border: 5px groove;
+    border-radius: 30px;
+    border-color: rgb(212, 75, 40);
+    box-shadow: 15px 15px 15px #25c468;
+}#b7{
+    border: 12px outset;
+    border-radius: 10px;
+    border-color: rgb(173, 20, 166);
+    box-shadow: 15px 15px 15px #25c468;
+}
+#b8{
+    border: 6px ridge;
+    border-radius: 20px;
+    border-color: rgb(158, 161, 113);
+    box-shadow: 15px 15px 15px #ec4300;
+}
+#b9{
+    border: 15px dashed;
+    border-radius: 10px;
+    border-color: rgb(3, 57, 128);
+    box-shadow: 15px 15px 15px #ec4300;
+}
+#b10{
+    border: 25px inset;
+    border-radius: 11px;
+    border-color: rgb(100, 48, 48);
+    box-shadow: 15px 15px 15px #ec4300;
+}
+#b11{
+    border: 12px dashed;
+    border-radius: 10px;
+    border-color: rgb(49, 68, 92);
+    box-shadow: 15px 15px 15px #ec4300;
+}#b12{
+    border: 10px outset;
+    border-radius: 20px;
+    border-color: rgb(48, 184, 30);
+    box-shadow: 15px 15px 15px #ec4300;
+}#b13{
+    border: 5px outset;
+    border-radius: 15px;
+    border-color: rgb(15, 104, 34);
+    box-shadow: 15px 15px 15px #ec4300;
+}#b14{
+    border: 12px inset;
+   
+    border-color: rgb(53, 65, 21);
+    box-shadow: 15px 15px 15px #ec4300;
+}
+#b15{
+    border: 6px dashed;
+    border-radius: 30px;
+    border-color: teal;
+    box-shadow: 15px 15px 15px #ec4300;
+}
+#b16{
+    border: 10px ridge;
+    border-radius: 50px;
+    border-color: rgb(27, 100, 122);
+    box-shadow: 15px 15px 15px #ec4300;
+}
+#b17{
+    border: 30px double;
+    border-radius: 15px;
+    border-color: rgb(66, 10, 33);
+    box-shadow: 15px 15px 15px #ecc200;
+}
+#b18{
+    border: 15px solid;
+    border-radius: 30px;
+    border-color: rgb(31, 141, 123);
+    box-shadow: 15px 15px 15px #ecc200;
+}#b19{
+    border: 9px dotted;
+    border-radius: 10px;
+    border-color: rgb(209, 17, 17);
+    box-shadow: 15px 15px 15px #ecc200;
+}#b20{
+    border: 20px groove;
+    border-radius: 10px;
+    border-color: rgb(212, 75, 40);
+    box-shadow: 15px 15px 15px #ecc200;
+}#b21{
+    border: 12px outset;
+    border-radius: 10px;
+    border-color: rgb(173, 20, 166);
+    box-shadow: 15px 15px 15px #186e25;
+}
+#b22{
+    border: 6px groove;
+    border-radius: 20px;
+    border-color: rgb(158, 161, 113);
+    box-shadow: 15px 15px 15px #186e25;
+}
+#b23{
+    border: 15px dashed;
+    border-radius: 10px;
+    border-color: rgb(3, 57, 128);
+    box-shadow: 15px 15px 15px #186e25;
+}
+#b24{
+    border: 25px ridge;
+    border-radius: 11px;
+    border-color: rgb(100, 48, 48);
+    box-shadow: 15px 15px 15px #186e25;
+}
+#b25{
+    border: 12px dotted;
+    border-radius: 10px;
+    border-color: rgb(168, 103, 128);
+    box-shadow: 15px 15px 15px #18556e;
+}#b26{
+    border: 10px outset;
+    border-radius: 5px;
+    border-color: rgb(48, 184, 30);
+    box-shadow: 15px 15px 15px #18556e;
+}#b27{
+    border: 5px X;
+    border-radius: 15px;
+    border-color: rgb(127, 156, 201);
+    box-shadow: 15px 15px 15px #18556e;
+}#b28{
+    border: 22px double;
+    border-radius: 10px;
+    border-color: rgb(66, 59, 128);
+    box-shadow: 15px 15px 15px #18556e;
+}
+img{
+    width:110px;
+    border-radius: 30px;
+    padding: 5px;
+    vertical-align: middle;
+}
+p{
+    font-size: 17px;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    vertical-align: middle;
+    padding-right: 10px;                                                                                    
+}
+
+h3{
+    font-size: 25px;
+    font-family: Georgia;
+    text-align: right;    
+    padding-right: 5px;
+    font-style: italic;
+}
+h1{
+    text-align: center;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+section{
+    float: left;
+    float:inline-end;      
+}
+
+#header{
+    font-family: Impact;
+    font-size: 100px;
+    text-align: center;
+}

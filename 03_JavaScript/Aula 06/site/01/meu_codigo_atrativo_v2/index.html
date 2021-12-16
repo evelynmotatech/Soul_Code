@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Atrativa</title>
+    <link rel="stylesheet" href="./style.css">    
+</head>
+
+<body class="body_page" onload="load_page()">
+
+    <section class="container">
+        <header class="header">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="accessibility-menu">
+                <section class="increase_decrease">
+                    <button onclick="increase()" class="increase-button"> + Increase</button> 
+                    <button onclick="decrease()" class="decrease-button"> - Decrease</button> 
+                </section>
+        
+                <section class="light-dark-button">
+                    <input onclick="light_button()" type="radio" id="light-button" name="buttons" checked>
+                    <label for="light-button">
+                        <span>Light mood☀️</span>
+                    </label>
+                    
+                    <input onclick="dark_button()" type="radio" id="dark-button" name="buttons">
+                    <label for="dark-button">
+                        <span>Dark mood🌑</span>
+                    </label>
+                </section>
+            </section>
+    
+            <section class="form" >
+                <form name = "formulario" action="enviar" method = "post">
+                    <ul class="itens-form">
+                        Name:
+                        <input type="text"   id = "nome" name="nome" required onblur="validaNome()"placeholder="Nome">
+                        Age:
+                        <input type="number" id = "idade" name="idade" required onblur="validaIdade()" placeholder="Idade">
+                        Reason for the trip:
+                        <input type="text" id = "motivo" name="motivo" required onblur="validaMotivo()" placeholder="Motivo da viagem">               
+                        Email:
+                        <input type="email"id = "email" name="email" required onblur="validaEmail()" placeholder="email@exemplo.com">        
+                        <input id = "btnenvio" type="submit" >
+                    </ul>
+                </form>
+            </section>
+        </section>
+        <section class= "local ">
+        <h2 class="titulolocal" onmouseover="increase_size()" onmouseleave="decrease_size()">Localization</h2><br/>        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206837.08609373495!2d14.30766849457529!3d35.9021920069249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130e5039034858f5%3A0x1c8acf3f5cf3b64b!2sMalta!5e0!3m2!1spt-BR!2sbr!4v1628556317577!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+        </section>
+        </main>
+        
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

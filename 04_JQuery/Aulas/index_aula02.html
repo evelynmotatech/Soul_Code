@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Hello, JQuery.</title>
+<!-- Versão development jQuery -->
+<script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+<script>
+    // Strings que começam com 'campo';
+    // $(document).ready(function(){
+    //    $("input[name^='campo']").css({backgroundColor:"red"});
+    // });
+    
+    //Strings que finalizam com '1'
+    // $(document).ready(function(){
+    //    $("input[name$=1]").css({backgroundColor:"blue"});
+    // });
+
+    //Strings que contenham uma palavra especifica
+    // $(document).ready(function(){
+    //    $("input[name*='ere']").css({backgroundColor:"tomato"});
+    // });
+    
+</script>
+</head>
+<body>
+    <!-- <input type="text" name="campo1">
+    <input type="text" name="campo2">
+    <input type="text" name="endereco"> -->
+
+
+    <!-- <div id="divPrincipal">
+        <span id="teste" style="background-color: tomato;">Texto inicial</span>
+      </div>
+      <button id="btnTeste">Testar</button>
+    
+
+      <script type="text/javascript">
+        // $("#btnTeste").click(function () {
+        //   $("#teste").append(" Título <br>");
+        // });
+
+        // $("#btnTeste").click(function(){
+        // $(this).appendTo("#divPrincipal");
+        // });
+        
+        // $("#btnTeste").click(function(){
+        // $("#divPrincipal").prepend("<h1>Titulo</h1>");
+        // });
+
+        // $("#btnTeste").click(function(){
+        // $(this).prependTo("#divPrincipal");
+        // });
+
+        // $("#btnTeste").click(function(){
+        // var conteudo = $("#divPrincipal").html();
+        // alert(conteudo);
+        // $("#divPrincipal").html("<h3>Novo conteudo</h3>")
+        // });
+      </script> -->
+
+      <h3>Lista de itens</h3>
+        <ul id="lista" style="background-color: tomato;">
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ul>
+    <script>
+        // $(function(){
+        //datach(): os elementos selecionados são desligados de seu container, mas seu conteúdo pode ser recuperado no momento do desligamento. 
+        // var itens = $("#lista li").detach();
+        // console.log(itens);
+        // });
+            
+        //empty():  serve para esvaziar todo um elemento, removendo por inteiro o seu conteúdo;
+        // var itens = $("#lista li").empty();
+        // console.log(itens);
+
+        //remove(): remove o elemento alvo de sua chamada do DOM.
+        // var itens = $("#lista li").remove();
+        // console.log(itens);
+
+        //unwrap(): O unwrap() remove do DOM o elemento pai do selecionado, deixando o elemento alvo “solto” no container mais externo ao seu pai.
+        // var itens = $("#lista li").unwrap();
+        // });      
+        
+        //replaceAll(): substitui o os elementos passados como parâmetro pelo conteúdo do elemento que a invocou
+        // var itens = $("h3").replaceAll("#lista li");
+        // });
+
+        //replaceWith(): O replaceWith funciona de forma inversa ao replaceAll. Enquanto no primeiro o elemento que invoca o método é o valor substituto, no segundo, o novo valor é passado como parâmetro, enquanto o elemento a ser substituído é quem invoca o método.
+        // var itens = $("#lista li").replaceWith("<h4>Novo conteúdo</h4>");
+        // });
+       
+    </script>
+    
+
+
+    
+</body>
+</html>
+

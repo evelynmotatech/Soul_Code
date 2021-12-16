@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Table template</title>
+  <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  <style>
+    img {
+      width: 100%;
+      border-radius: 45px;
+      }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 150px;
+    }
+
+    ul li {
+      position: relative;
+    }
+
+    li ul {
+      position: absolute;
+      left: 149px;
+      top: 0;
+      display: none;
+    }
+
+    ul li a {
+      display: block;
+      text-decoration: none;
+      color: #E2144A;
+      background: #fff;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    li:hover ul {
+      display: block;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+      font-weight: bold;
+      background: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th colspan="3">Filmes da franquia Matriz</th>
+    </tr>
+    <tr>      
+      <td><h2 id="filme1">Matrix</h2>
+        <figure>
+          <img src="https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG" alt="Matrix 1">
+        </figure>
+      </td>
+      <td>
+        <h3>Sinopse</h3>
+        <p>Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado por cabos a
+          um imenso sistema de computadores do futuro. À medida que o sonho se repete, ele começa a levantar
+          dúvidas sobre a realidade. E quando encontra os misteriosos Morpheus e Trinity, ele descobre que é
+          vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas e cria a ilusão
+          de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia.</p>
+      </td>
+      <td rowspan="3"><h2>Menu</h2>
+        <ul id="nav">
+          <li>
+            <a href="#filme1">Matrix</a>
+          </li>
+          <li>
+            <a href="#filme2">Matrix: Reloaded</a>
+          </li>
+          <li>
+            <a href="#filme3">Matriz: Revolutions</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <h2 id="filme2">Matrix: Reloaded</h2>
+      <td><img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/79/23/02/20073059.jpg" alt="Matrix 2"></td>
+      <td>
+        <h3>Sinopse</h3>
+        <p>Após derrotar as máquinas em seu combate inicial, Neo (Keanu Reeves) ainda vive na Nabuconodosor ao lado de
+          Morpheus (Laurence Fishburne), Trinity (Carrie-Anne Moss) e Link (Harold Perrineau Jr.), o novo tripulante da
+          nave. As máquinas estão realizando uma grande ofensiva contra Zion, onde 250 mil máquinas estão escavando rumo
+          à cidade e podem alcançá-la em poucos dias. A Nabucodonosor é convocada para retornar a Zion, para participar
+          da reunião que definirá o contra-ataque humano às máquinas. Entretanto, um recado enviado pelo Oráculo (Gloria
+          Foster) faz com que a nave parta novamente, levando Neo de volta à matrix. Lá ele descobre que precisa
+          encontrar o Chaveiro (Randall Duk Kim), um ser que possui a chave para todos os caminhos da matrix e que é
+          mantido como prisioneiro por Merovingian (Lambert Wilson) e sua esposa, Persephone (Monica Bellucci).</p>
+      </td>
+    </tr>
+    <tr>
+      <h2 id="filme3">Matrix: Revolutions</h2>
+      <td><img
+          src="https://img.elo7.com.br/product/original/2679A60/big-poster-filme-matrix-revolutions-lo03-tamanho-90x60-cm-presente-geek.jpg"
+          alt="Matrix 3"></td>
+      <td>
+        <h3>Sinopse</h3>
+        <p>Após enfrentar os sentinelas no mundo real, Neo, a maior esperança da humanidade, está preso entre a
+          Matrix e a realidade. A maioria da população do planeta permanece em um estado de suspensão da realidade
+          virtual. Os poucos humanos que estão cientes das duras realidades tentam desesperadamente afastar as
+          máquinas a tempo de Neo escapar e salvar o dia. Mas as coisas pioram quando o poderoso programa de
+          computador, Agente Smith, aparece na forma humana.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Rodapé</td>
+    </tr>
+  </table>
+</body>
+
+</html>

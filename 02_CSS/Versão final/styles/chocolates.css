@@ -1,0 +1,186 @@
+/* -- Inicio das configurações que se aplicam a toda a página -- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+body{
+     background-color:linen;  /*Para corrigir a barra branca o final da página*/
+}
+
+/* -- Fim das configurações que se aplicam a toda a página -- */
+
+/* --Inicio das configurações do conteudo do header -- */
+
+header{
+    width:100%;
+    height:20vh;
+    background: linear-gradient(to right, black 5%, #26070C 40%, #732002,#26070C);
+    position:relative;
+}
+#logo{
+    position:absolute;
+    left:4vw;
+    height:20vh;
+    width:25vh;
+}
+#pesquisa{
+    position:absolute;
+    bottom:1.5vh;
+    right:3vw;
+    
+}
+#pesquisa input{
+    width: 20vw;
+    height:3vh;
+}
+
+/* --Fim das configurações do conteudo do header -- */
+
+/* --- Inicio das configurações do Menu horizontal do topo (nav)---*/ 
+
+.headernav{
+    width:100%;
+    height:fit-content;
+}
+.headernav ul {
+    height:100%;
+    width:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #1e130c;
+    border-top: 0.2vh ridge #9a8478;
+    border-bottom: 0.2vh ridge #9a8478;
+
+}
+.headernav ul li{
+    list-style: none;
+    width:auto;
+}
+.headernav ul li a{
+    font-weight: 700;
+    font-size: 1.8vw;
+    color:cornsilk;
+    background:radial-gradient(30% 70% at center, #806e65, #66574f, #1e130c);
+    text-shadow: 0px 0px 10px rgb(126, 115, 98);  
+}
+.headernav ul li a:hover{
+    animation-name: glow;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes glow{
+    50%{
+        color:linen;
+        background:radial-gradient(40% 60% at center, #d4bcae, #1e130c);
+        text-shadow: 0px 0px 20px rgb(248, 244, 239);
+    }
+    100%{
+        color:linen;
+        background:radial-gradient(50% 50% at center, #e0c2b2, #1e130c);
+        text-shadow: 0px 0px 20px linen;
+    }
+}
+.headernav form{
+    float:right;
+}
+
+/* --- Fim das configurações do Menu horizontal do topo (nav)---*/ 
+
+/*-- Início das configurações do conteudo principal (main) --*/
+main{
+    position: relative;
+    height:auto;
+    background-color: rgb(245, 242, 238);
+    padding-top:5vh;
+    padding-bottom:10vh;
+}
+
+h5{
+    position: absolute;
+    right: 25%;
+    top: 980px;    
+    font-size: 20px;
+    line-height: 24px;    
+    letter-spacing: -0.015em;
+}
+
+.flex-pai{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+.flex_filho_um{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.chocolates{
+	width: 20vw;
+}
+/*-- Fim das configurações do conteudo principal (main) --*/
+
+/* -- Inicio das configurações do rodapé (footer) --*/
+
+footer{
+    position:relative;
+    width:100%;
+    height:110px;
+    background-color: linen;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+}
+.container{
+    width:90%;
+    height:10vh;
+    background-color:linen;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+.logo-bottom{
+    width:35%;   
+}
+.redes-sociais{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items:center;   
+}
+.fotorodape{
+    width: 50%;
+}
+.instagram{
+    width: 50%;    
+}
+.facebook{
+    width: 50%;
+}
+.twitter{
+    width: 50%;
+}
+.copyright{
+    position: absolute;
+    width: 50%;
+    top: 10vh;
+    left: 25%;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+/* -- Fim das configurações do rodapé (footer) --*/

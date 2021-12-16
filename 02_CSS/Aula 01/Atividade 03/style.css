@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+h1{
+    font-family: Georgia;
+    text-decoration: underline;
+}
+.opcional{
+    color:#0B62DB
+}
+
+#ingredientes{
+    color: #538F31;
+}
+h3{
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+li{
+    list-style: none;
+}
+
+div{
+    background-position: center;
+    background-color: #A6DB9F; 
+}

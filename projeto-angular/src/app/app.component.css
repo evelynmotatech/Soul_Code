@@ -1,0 +1,77 @@
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+hr {
+  color: rgb(200, 200, 35);
+  height: 1px;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.175rem;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #E23237;
+  margin: 3px 0;
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  line-height: 20px;
+}
+
+#imgAngular {
+  background-image: url(../assets/angular4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+#introducao {
+  margin-top: 50px;
+}
+
+nav div ul li a {
+  color: black;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+nav div ul li a:hover {
+  color: #E23237;
+}
+
+#btn-top {
+  z-index: 500;
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+}
+
+#btn-top img {
+  width: 50px;
+  height: 50px;
+}

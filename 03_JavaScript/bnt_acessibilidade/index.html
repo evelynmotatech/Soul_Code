@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>    
+    <title>Acessibilidade visual</title>
+</head>
+
+<body class="body_page">
+   
+    <section class="accessibility-menu">
+        <section class="increase_decrease">
+            <button onclick="increase()" class="increase-button">Aumentar fonte</button>
+            <button onclick="decrease()" class="decrease-button">Diminuir fonte</button>
+        </section>
+        <section class="light-dark-button">
+            <input onclick="light_button()" type="radio" id="light-button" name="buttons" checked>
+            <label for="light-button">
+                <span>Modo claro</span>
+            </label>
+            <input onclick="dark_button()" type="radio" id="dark-button" name="buttons">
+            <label for="dark-button">
+                <span>Modo escuro</span>
+            </label>
+        </section>
+    </section>
+     
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!-- <html>
+<head>
+<title>Hello, JQuery.</title>
+Versão development jQuery -->
+<!-- <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $("#botao1").click(function(){
+           alert("Teste");
+       });
+    });
+</script>
+</head>
+<body>
+    <button id="botao1"> Clique </button>
+</body>
+</html> -->
+
+<!-- Faz algo aparecer lentamente ao clicar no botão -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução jQuery </title>
+    Referencia a biblioteca jquery (JS) -->
+<!-- <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+    Funcionalidades da página -->
+<!-- <script type="text/javascript">
+        function mostraParagrafo() {
+            $("#paragrafo").fadeIn("slow");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="mostraParagrafo()" value="exibe paragrafo" />
+    <p id="paragrafo" style="display: none;">
+        Este paragrafo é um exemplo.
+    </p>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução jQuery </title>
+   Referencia a biblioteca jquery (JS) -->
+<!-- <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+    Funcionalidades da página
+    <style type="text/css">
+        .escondido {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function mostraParagrafo() {
+            $(".escondido").slideDown("slow");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="mostraParagrafo()" value="exibe paragrafo" />
+    <p class="escondido"> Paragrafo exemplo 1. </p>
+    <p class="escondido"> Paragrafo exemplo 2. </p>
+    <p class="escondido"> Paragrafo exemplo 3. </p>
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução jQuery </title>
+    Referencia a biblioteca jquery (JS)
+    <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+   Funcionalidades da página 
+    <style type="text/css">
+        .escondido {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a, #menu, h1").css("font-family", "Verdana");
+        });
+    </script>
+</head>
+
+<body>
+    <h1> Exemplo - Seletores </h1>
+    <hr>
+    <div id="menu">
+        <a href=""> Home </a>--
+        <a href=""> Artigos </a>--
+        <a href="">Contato </a>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introdução jQuery </title>
+    <!-- Referencia a biblioteca jquery (JS) -->
+    <script type="text/javascript" src="./JS/jquery-3.6.0.min.js"></script>
+    <!-- Funcionalidades da página -->
+    <style type="text/css">
+        div {
+            width: 200px;
+            heigth: 100px;
+            border: 1px solid #000;
+            margin: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#botao").click(function () {
+                $("p:first").css("background-color", "red");
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" id="botao" value="adiciona cor vermelha" />
+    <p>Paragrafo 1 irmão da div.</p>
+    <p>Paragrafo 2 irmão da div.</p>
+    <p>Paragrafo 3 irmão da div.</p>
+</body>
+</html>

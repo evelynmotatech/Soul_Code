@@ -1,0 +1,58 @@
+*{
+    background-color: #05C7F2;
+    margin: 0px;
+    padding: 0px;    
+        
+}
+main{
+    background-color: #E6E6E6;
+    padding: 10px;    
+    width: 600px;
+    height: 200px;
+    clear: both;
+    border: solid 1px;
+    display: inline-block;
+}
+
+aside{
+    border: solid 1px;   
+    width: 200px;
+    height: 100px;    
+    float: right;
+    background-color: #E6E6E6;
+    
+}
+article{
+    width: 250px;
+    height: 250px;
+    clear: both;
+    float: left;    
+    text-align: center;
+    background-color: #E6E6E6;    
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+    
+}
+li{
+    background-color: #333333;     
+    border: solid 1px;
+    border-radius: 2px; 
+    float: left;
+    width: 180px;
+    height: 25px;
+    margin-top:0px;
+   
+}
+.divisoria{
+    float: left;
+    height: 50px;
+}
+
+.img_olho{
+    float:right;    
+    margin-right: 405px;
+    margin-bottom: 10px;   
+}

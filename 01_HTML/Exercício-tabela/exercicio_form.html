@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de vacinação</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <form action="/pagina-processa-dados-do-form" method="post">Formulário de vacinação</form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" /><br><
+                <label for="nascimento">Data de nascimento: </label>
+                <input type="date" id="nascimento" /><br>
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel" /><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" /><br>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" /><br>
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" /><br>
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" /><br>
+                <label for="cep">Cep:</label>
+                <input type="number" id="cep" /><br>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" /><br>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" /><br>
+            </td>
+            <td>
+                <label for="atendimento">Data de atendimento:</label>
+                <input type="date" id="atendimento" /><br>
+                <label for="tipo_sang">Tipo sanguíneo:</label>
+                <input type="text" id="tipo_sang" /><br>
+                <label for="fator_rh">Fator RH:</label>
+                <input type="text" id="fator_rh" /><br>
+                <label for="vacinas_aplic">Vacinas aplicadas:</label>
+                <input type="text" id="vacinas_aplic" /><br>
+                <label for="comorbidade">Comorbidade:</label>
+                <input type="text" id="comorbidade" /><br>
+                <label for="contato_emerg">Contato de emergência</label>
+                <input type="tel" id="contato_emerg" /><br>
+                <label for="prioridade_atend">Cor</label>
+                <input type="color" id="prioridade_atend"><br>
+                <p style="font-size: 10px;">Cores de prioridade:<br>
+                Vermelho: Emergência: atendimento imediato;<br>
+                Laranja: Muito urgente: espera até 10 minutos;</br>
+                Amarelo: Urgente: espera de até 1 hora; </br>
+                Verde: Pouco urgente: espera de até 2 horas;</br>
+                Azul:Não urgente: espera de até 4 horas;<br></p>
+                <label for="velocidade_atend">Velocidade de atendimento</label>
+                <input type="range" min="1" max="4" id="velocidade_atend"><br>
+                <label for="msg">Observações</label>
+                <input type="msg" id="msg">
+            </td>
+        </tr>
+    </table>
+
+</body>
