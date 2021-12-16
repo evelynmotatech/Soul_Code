@@ -1,0 +1,107 @@
+use sys;
+ALTER USER 'user' IDENTIFIED WITH mysql_native_password BY 'user';
+FLUSH PRIVILEGES;
+UPDATE mysql.user SET Grant_priv='Y', Insert_priv='Y' WHERE User='user';
+UPDATE mysql.user SET Grant_priv='Y', Super_priv='Y' WHERE User='user';
+exit
+node teste.js
+
+usuarios
+SELECT user FROM mysql.user;
+
+select funcionarios.nome_func, salario.valor_salario from funcionarios join salario on salario.func_salario = funcionarios.id_func;
+
+select funcionarios.nome_func, departamento.desc_departamento, salario.valor_salario from funcionarios join departamento join salario on salario.func_salario = funcionarios.id_func and funcionarios.departamento_func = departamento.id_departamento;
+
+
+var mysql = require("mysql");
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "user",
+  password: "user",
+  database: "sistema_rh"
+});
+
+con.connect(function (err) {
+  var resultado = 0;
+  if (err) throw err;
+  console.log("Conectado!");
+  var sql = "SELECT * FROM funcionarios";
+  con.query(sql, function (err, result) {
+      resultado = result;
+      console.log(resultado);
+    if (err) throw err;
+    console.log("dado inserido: " + sql);
+  });
+});
+
+var resultado = 0;
+var nome = "gustavo";
+
+var minha_query = "INSERT INTO alunos(matricula_aluno, nome_aluno, turma_aluno) VALUES('asdfsa', '" + nome + "', 1)";
+con.query(minha_query, function (err, result) {
+  if (err) throw err;
+  console.log("Inserindo nome_aluno:" + nome);
+});
+
+var minha_query = "SELECT * FROM alunos WHERE nome_aluno = '" + nome + "'";
+con.query(minha_query, function (err, result) {
+  resultado = result;
+  console.log(resultado);
+  if (err) throw err;
+  console.log("dados lidos do aluno: " + nome);
+});
+
+var minha_query = "UPDATE alunos SET matricula_aluno = 'testindo' WHERE nome_aluno = '" + nome + "'";
+con.query(minha_query, function (err, result) {
+  if (err) throw err;
+  console.log("Atualizado onde nome_aluno:" + nome);
+});
+
+var minha_query = "DELETE FROM alunos WHERE nome_aluno = '" + nome + "'";
+con.query(minha_query, function (err, result) {
+  if (err) throw err;
+  console.log("Excluido onde nome_aluno:" + nome);
+});
+
+
+/ CONECTAR AO BANCO DE DADOS
+async function connect(){
+    if(global.connection && global.connection.state !== 'disconnected')
+        return global.connection;
+
+    const mysql = require("mysql2/promise");
+    const connection = await mysql.createConnection("mysql://root:adm123@localhost:3306/crud");
+    console.log("Conectou no MySQL!");
+    global.connection = connection;
+    return connection;
+}
+
+async function listar_produto(){
+    const conn = await connect();
+    const [rows] = await conn.query('SELECT * FROM estoque;');
+    return rows;
+}
+
+//CRIAÇÃO DA ROTA PADRÃO
+const estoqueRouter = require("./routers/estoque-router");
+app.use("/estoque", estoqueRouter);
+
+//CRIAR ROTA PARA RENDERIZAR A PÁGINA PRINCIPAL
+app.get("/", (req, res)=>{
+    res.render("views/pages/paginaInicial")
+});
+
+
+(async () => {
+    const db = require("./db");
+    console.log('Começou!');
+    
+    console.log('SELECT * FROM CLIENTES');
+    const clientes = await db.selectCustomers();
+    console.log(clientes);
+    
+    console.log('INSERT INTO estoque');
+    const result = await db.cadastrar_Produto({nome: "Zé", idade: 18, uf: "SP"});
+    console.log(result);
+})();
